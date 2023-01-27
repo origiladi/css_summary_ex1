@@ -1,0 +1,114 @@
+body{
+    font-size: large;
+}
+header{
+    background-color: #f4f4f4;
+}
+
+
+main{
+    background-color: rgba(59,179,248);
+    display: flex;
+    color: white;
+}
+main button{
+    background-color: #f6a726;
+    padding: 10px;
+    color: white;
+}
+#callNow{
+    display: none;
+}
+main button,input{
+    width: 170px;
+}
+main section#heading{
+    flex:2;
+    background-color: rgba(59,179,248,0);
+}
+main section#text{
+    display: none;
+}
+main section#form{
+    flex: 1;
+    background-color: rgba(59,179,248,0.7);
+}
+main section#form *{
+    display: block;
+    margin: 10px;
+}
+
+#middle{
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+    display: flex;
+    text-align: center;
+}
+i{
+    font-size: 50px;
+}
+#middle p{
+    vertical-align: bottom;
+
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+img{
+    width: 120px;
+    height: auto;
+    border-radius: 80px;
+}
+#lowest{
+    margin-top: 3vh;
+    text-align: center;
+    width: 100%;
+    background-color: white;
+}
+
+
+@media only screen and (max-width: 600px) {
+    header{
+        text-align: center;
+    }
+
+
+    #callNow{
+        display: block;
+       margin-bottom: 2vh;
+    }
+    main {
+      flex-direction: column;
+      align-items: center;
+     
+    }
+    main section{
+        width: 80%;
+        flex: 1;
+    }
+    main section#heading{
+       border-bottom: 3px solid white;
+    }
+    main section#text{
+        display: block;
+        border-bottom: 3px solid white;
+     }
+    main button,input{
+        width:80%
+    }
+    input{
+        padding: 0.7rem;
+    }
+  
+
+    #middle {
+        margin-left: 3vw;
+        flex-direction: column;
+        text-align: left; 
+      }
+
+}
